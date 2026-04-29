@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/92c3369426.js" crossorigin="anonymous"></script>
+    <title>Clone do Facebook</title>
+</head>
+<body>
+
+
+    <nav>
+
+
+    <!--INICIO LOGO E ICONES -->
+    <div class="nav-left">
+        <img src="assets/imagens/Logo-Luccas-Dev.png" alt="Nome do site" class="logo">
+        <ul>
+            <li><img src="assets/imagens/notification.png" alt="Notificações"></li>
+            <li><img src="assets/imagens/inbox.png" alt="inbox"></li>
+            <li><img src="assets/imagens/video.png" alt="video"></li>
+        </ul>
+    </div>
+    <!--FIM LOGO E ICONES -->
+
+
+
+
+
+    <!--INICIO MENU BE BUSCA -->
+    <div class="nav-right">
+
+        <div class="search-box">
+            <img src="assets/imagens/search.png" alt="icone de busca">
+            <input type="text" name="p" placeholder="Pesquisar">
+        
+        </div>
+
+
+        <!-- INICIO PERFIL FOTO-->
+        <div class="nav-user-icon online" onclick="abreConfig()">
+            <img src="assets/imagens/Perfil-Luccas.png" alt="Luccas Oliveira">
+
+        </div>
+        <!-- FIM PERFIL FOTO-->
+
+    </div>
+    <!--FIM MENU E BUSCA -->
+<!--------------------INICIO CONFIGURAÇÕES -------------------->
+    <div class="settings-menu">
+        <div id="dark-btn">
+        <span></span>
+        </div>
+
+        <div class="settings-menu-inner">
+            <!--INICIO FOTO POST USER PERFIL-->
+            <div class="user-profile">
+                <img src="assets/imagens/Perfil-Luccas.png" alt="">
+                <div>
+                    <p>Luccas Oliveira</p>
+                    <a href="perfil.html">Meu Perfil</a>
+                </div>
+
+            </div>
+<!--FIM FOTO POST USER PERFIL-->
+            <hr>
+
+            <!--INICIO FOTO POST USER PERFIL-->
+            <div class="user-profile">
+                <img src="assets/imagens/feedback.png" alt="">
+                <div>
+                    <p>Deixe seu feedbeck</p>
+                    <a href="#">Pedido de ajuda</a>
+                </div>
+
+            </div>
+<!--FIM FOTO POST USER PERFIL-->
+            <hr>
+
+<!--INICIO LINKS CONFIGURAÇÕES-->
+            <div class="settings-links">
+                <img src="assets/imagens/setting.png" alt="" class="settings-icons">
+                <a href="#">Configurações e Privacidade <img src="assets/imagens/arrow.png" alt="" width="10px"></a>
+            </div>
+<!--FIM LINKS CONFIGURAÇÕES-->
+
+
+<!--INICIO LINKS CONFIGURAÇÕES-->
+            <div class="settings-links">
+                <img src="assets/imagens/help.png" alt="" class="settings-icons">
+                <a href="#">Ajuda e suporte <img src="assets/imagens/arrow.png" alt="" width="10px"></a>
+            </div>
+<!--FIM LINKS CONFIGURAÇÕES-->
+
+<!--INICIO LINKS CONFIGURAÇÕES-->
+            <div class="settings-links">
+                <img src="assets/imagens/logout.png" alt="" class="settings-icons">
+                <a href="#">Sair <img src="assets/imagens/arrow.png" alt="" width="10px"></a>
+            </div>
+<!--FIM LINKS CONFIGURAÇÕES-->
+
+        </div>
+    </div>
+<!--------------------FIM CONFIGURAÇÕES -------------------->
+    
+    </nav>
+
+    <!--INICIO DO CORPO DO SITE-->
+    <div class="container">
+
+ <!--INICIO DA BARRA LATERAL ESQUERDA SITE--> 
+ 
+        <div class="left-sidebar">
+        <div class="imp-links">
+            <a href="#"><img src="assets/imagens/news.png" alt="">Últimas Notícias</a>
+            <a href="#"><img src="assets/imagens/friends.png" alt="">Amigos</a>
+            <a href="#"><img src="assets/imagens/group.png" alt="">Grupos</a>
+            <a href="#"><img src="assets/imagens/marketplace.png" alt="">Marketplace</a>
+            <a href="#"><img src="assets/imagens/watch.png  " alt="">Vídeos</a>
+            <a href="#">Veja Mais</a>
+        </div>
+            <div class="shortcut-links">
+                <p>Seus Atalhos</p>
+                <a href="#" title=""><img src="assets/imagens/shortcut-1.png" alt="">Sheep PHP></a>
+                <a href="#" title=""><img src="assets/imagens/shortcut-2.png" alt="">Cobranças Recorrentes</a>
+                <a href="#" title=""><img src="assets/imagens/shortcut-3.png" alt="">NodeJS</a>
+                <a href="#" title=""><img src="assets/imagens/casamento.jpg" alt="">Casamento</a>
+                
+            </div>
+        </div>
+<!--FIM DA BARRA LATERAL ESQUERDA SITE-->
+
+
+<!-- INICIO CONTEUDO DO SITE -->
+        <div class="main-content">
+
+<!-- INICIO STORY GALERIA DO SITE -->
+            <div class="story-gallery">
+
+<!-- INICIO STORY -->
+                <div class="story story1">
+                    <img src="assets/imagens/upload.png" alt="">
+                    <p>Postar Story</p>
+                </div>
+<!-- FIM STORY -->
+
+ <!-- INICIO STORY -->
+                <div class="story story2">
+                    <img src="assets/imagens/programador.png" alt="">
+                    <p>Luccas Dev</p>
+                </div>
+<!-- FIM STORY -->
+
+ <!-- INICIO STORY -->
+                <div class="story story3">
+                    <img src="assets/imagens/member-2.png" alt="">
+                    <p>Marcia</p>
+                </div>
+<!-- FIM STORY -->
+ 
+ <!-- INICIO STORY -->
+                <div class="story story4">
+                    <img src="assets/imagens/member-3.png" alt="">
+                    <p>Karolzinha</p>
+                </div>
+<!-- INICIO STORY -->
+                <div class="story story5">
+                    <img src="assets/imagens/member-7.png" alt="">
+                    <p>Maycão</p>
+                </div>
+<!-- FIM STORY -->
+
+            </div>
+<!-- FIM STORY GALERIA DO SITE -->
+
+<!--INICIO POST USER PERFIL-->
+
+
+        <div class="write-post-container">
+
+<!--INICIO FOTO POST USER PERFIL-->
+            <div class="user-profile">
+                <img src="assets/imagens/Perfil-Luccas.png" alt="">
+                <div>
+                    <p>Luccas Oliveira</p>
+                    <small>Publico <i class="fa-solid fa-sort-down"></i></small>
+                </div>
+
+            </div>
+<!--FIM FOTO POST USER PERFIL-->
+
+<!--INICIO POST TEXTAREA-->
+        <div class="post-input-container">
+        <textarea rows="3" placeholder="O que você está pensando, Luccas?"></textarea>
+
+<!--INICIO LINK POST -->
+        <div class="add-post-links">
+            <a href="#"><img src="assets/imagens/live-video.png" alt="">Ao Vivo</a>
+            <a href="#"><img src="assets/imagens/photo.png" alt="">Foto</a>
+            <a href="#"><img src="assets/imagens/feeling.png" alt="">Atividades</a>
+        </div>
+<!--FIM LINK POST -->
+
+        </div>
+<!--FIM POST TEXTAREA-->
+
+        </div>
+<!--FIM POST USER PERFIL-->
+
+<!-----------------------------------------INICIO POST FEED 1----------------------------------------->
+        <div class="post-container">
+
+<!--INICIO FOTO DO PERFIL -->
+            <div class="post-row">
+<!--INICIO FOTO POST USER PERFIL-->
+            <div class="user-profile">
+                <img src="assets/imagens/Perfil-Luccas.png" alt="">
+                <div>
+                    <p>Luccas Oliveira</p>
+                    <small>26 de Abril de 2030 ás 21:29hs</small>
+                </div>
+
+            </div>
+<!--FIM FOTO POST USER PERFIL-->
+            <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                
+            </div>
+<!--FIM FOTO DO PERFIL -->
+
+        <p class="post-text">
+            Garagem do Astra <span>@astracachacinha</span> e elementor - Luccas  Oliveira
+            <a href="#">#LuccasOliveira</a>
+            <a href="#">#astrasedan</a>
+        </p>
+        <img src="assets/imagens/cachacinha.png" alt="" class="post-img">
+
+<!--INICIO POST ICONES FEED -->
+        <div class="post-row">
+
+            <div class="activity-icons">
+                <div><img src="assets/imagens/like-blue.png" alt="">200</div>
+                <div><img src="assets/imagens/comments.png" alt="">50</div>
+                <div><img src="assets/imagens/share.png" alt="">90</div>
+            </div>
+
+        <div class="post-profile-icon">
+            <img src="assets/imagens/profile-pic.png" alt="">
+           <i class=" fa-solid fa-caret-down"></i> 
+        </div>
+
+        </div>
+<!--FIM POST ICONES FEED -->
+
+
+        </div>
+
+<!-----------------------------------------------FIM POST FEED 1-------------------------------------------------->
+
+<!-----------------------------------------INICIO POST FEED 2----------------------------------------->
+        <div class="post-container">
+
+<!--INICIO FOTO DO PERFIL -->
+            <div class="post-row">
+<!--INICIO FOTO POST USER PERFIL-->
+            <div class="user-profile">
+                <img src="assets/imagens/profile-pic.png" alt="">
+                <div>
+                    <p>Fernando</p>
+                    <small>28 de Abril de 2030 ás 07:09hs</small>
+                </div>
+
+            </div>
+<!--FIM FOTO POST USER PERFIL-->
+            <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                
+            </div>
+<!--FIM FOTO DO PERFIL -->
+
+        <p class="post-text">
+            Kit suspensão gol g5 <span>@autopecas</span> e elementor - Luccas  Oliveira
+            <a href="#">#LuccasOliveira</a>
+            <a href="#">#GTA</a>
+        </p>
+        <img src="assets/imagens/kit-suspensao-gta.png" alt="" class="post-img">
+
+<!--INICIO POST ICONES FEED -->
+        <div class="post-row">
+
+            <div class="activity-icons">
+                <div><img src="assets/imagens/like-blue.png" alt="">129</div>
+                <div><img src="assets/imagens/comments.png" alt="">30</div>
+                <div><img src="assets/imagens/share.png" alt="">60</div>
+            </div>
+
+        <div class="post-profile-icon">
+            <img src="assets/imagens/profile-pic.png" alt="">
+           <i class=" fa-solid fa-caret-down"></i> 
+        </div>
+
+        </div>
+<!--FIM POST ICONES FEED -->
+
+
+        </div>
+
+<!-----------------------------------------------FIM POST FEED 2-------------------------------------------------->
+
+<!-----------------------------------------INICIO POST FEED 3----------------------------------------->
+        <div class="post-container">
+
+<!--INICIO FOTO DO PERFIL -->
+            <div class="post-row">
+<!--INICIO FOTO POST USER PERFIL-->
+            <div class="user-profile">
+                <img src="assets/imagens/programador.png" alt="">
+                <div>
+                    <p>Luccas Dev</p>
+                    <small>30 de Abril de 2030 ás 11:59hs</small>
+                </div>
+
+            </div>
+<!--FIM FOTO POST USER PERFIL-->
+            <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                
+            </div>
+<!--FIM FOTO DO PERFIL -->
+
+        <p class="post-text">
+            Criando um site do zero e fácil <span>@VIDEOAULA</span> e elementor - Luccas  Oliveira
+            <a href="#">#LuccasOliveira</a>
+            <a href="#">#HTML&CSS</a>
+        </p>
+        <img src="assets/imagens/programador.png" alt="" class="post-img">
+
+<!--INICIO POST ICONES FEED -->
+        <div class="post-row">
+
+            <div class="activity-icons">
+                <div><img src="assets/imagens/like-blue.png" alt="">350</div>
+                <div><img src="assets/imagens/comments.png" alt="">92</div>
+                <div><img src="assets/imagens/share.png" alt="">105</div>
+            </div>
+
+        <div class="post-profile-icon">
+            <img src="assets/imagens/profile-pic.png" alt="">
+           <i class=" fa-solid fa-caret-down"></i> 
+        </div>
+
+        </div>
+<!--FIM POST ICONES FEED -->
+
+
+        </div>
+
+<!-----------------------------------------------FIM POST FEED 3 -------------------------------------------------->
+
+        <button type="button" class="load-more-btn">Leia Mais</button>
+
+        </div>
+<!-- FIM CONTEUDO DO SITE -->
+
+ <!--INICIO DA BARRA LATERAL DIREITA SITE-->
+        <div class="right-sidebar">
+
+ <!--INICIO DO TITULO DA BARRA LATERAL DIREITA SITE-->
+            <div class="sidebar-tittle">
+               <h4>Eventos</h4>
+               <a href="#">Veja Todos</a> 
+            </div>
+ <!--FIM DO TITULO DA BARRA LATERAL DIREITA SITE-->
+
+  <!--INICIO DO EVENTO DA BARRA LATERAL DIREITA SITE-->
+        <div class="event">
+
+            <div class="left-event">
+                <h3>04</h3>
+                <span>Abril</span>
+            </div>
+
+            <div class="right-event">
+                <h4>Mega Space</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Racha legalizado</p>
+                <a href="#">Mais Informações</a>
+            </div>
+        </div>
+ <!--FIM DO EVENTO DA BARRA LATERAL DIREITA SITE-->
+
+<!--INICIO DO EVENTO DA BARRA LATERAL DIREITA SITE-->
+        <div class="event">
+
+            <div class="left-event">
+                <h3>07</h3>
+                <span>Abril</span>
+            </div>
+
+            <div class="right-event">
+                <h4>Tunagem de carros</h4>
+                <p><i class="fa-solid fa-location-dot"></i> Garagem 031</p>
+                <a href="#">Mais Informações</a>
+            </div>
+        </div>
+ <!--FIM DO EVENTO DA BARRA LATERAL DIREITA SITE-->
+
+ <!--INICIO DO TITULO DA BARRA LATERAL DIREITA SITE-->
+            <div class="sidebar-tittle">
+               <h4>Patrocinados</h4>
+               <a href="#">Fechar</a> 
+            </div>
+ <!--FIM DO TITULO DA BARRA LATERAL DIREITA SITE-->
+            <img src="assets/imagens/Promoção.png" alt="" class="sidebar-ads">
+
+
+
+<!--INICIO DO TITULO DA BARRA LATERAL DIREITA SITE-->
+            <div class="sidebar-tittle">
+               <h4>Contatos</h4>
+               <a href="#">Fechar Chats</a> 
+            </div>
+ <!--FIM DO TITULO DA BARRA LATERAL DIREITA SITE-->
+
+ <!--INICIO USUARIOS ONLINE DA BARRA LATERAL DIREITA SITE-->           
+        <div class="online-list">
+            <div class="online">
+                <img src="assets/imagens/member-1.png" alt="">
+                
+            </div>
+                <p>Diego</p>
+        </div>
+ <!--FIM DO USUARIOS ONLINE DA BARRA LATERAL DIREITA SITE-->  
+ 
+  <!--INICIO USUARIOS ONLINE DA BARRA LATERAL DIREITA SITE-->           
+        <div class="online-list">
+            <div class="online">
+                <img src="assets/imagens/member-2.png" alt="">
+                
+            </div>
+                <p>Marcia</p>
+        </div>
+ <!--FIM DO USUARIOS ONLINE DA BARRA LATERAL DIREITA SITE-->  
+
+  <!--INICIO USUARIOS ONLINE DA BARRA LATERAL DIREITA SITE-->           
+        <div class="online-list">
+            <div class="online">
+                <img src="assets/imagens/member-3.png" alt="">
+                
+            </div>
+                <p>Karolzinha</p>
+        </div>
+ <!--FIM DO USUARIOS ONLINE DA BARRA LATERAL DIREITA SITE-->  
+
+        </div>
+<!--FIM DA BARRA LATERAL DIREITA SITE-->
+
+    </div>
+<!--FIM DO CORPO DO SITE-->
+
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
