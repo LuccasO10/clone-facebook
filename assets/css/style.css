@@ -639,3 +639,68 @@ nav
     padding-left: 23px;
     background: #0a0a0a;
 }
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-left ul {
+        display: none; /* esconde ícones */
+    }
+
+    .search-box {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* LAYOUT PRINCIPAL */
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .left-sidebar,
+    .right-sidebar {
+        display: none; /* esconde laterais */
+    }
+
+    .main-content {
+        flex-basis: 100%;
+    }
+
+    /* STORIES */
+    .story-gallery {
+        overflow-x: scroll;
+        gap: 10px;
+    }
+
+    .story {
+        min-width: 120px;
+        flex-basis: auto;
+    }
+
+    /* POSTS */
+    .post-container {
+        padding: 10px;
+    }
+
+    .post-input-container {
+        padding-left: 0;
+    }
+
+    /* BOTÕES POST */
+    .add-post-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
