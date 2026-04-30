@@ -1,0 +1,247 @@
+/* ===== RESET ===== */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body
+{
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #0f0f1a, #050510);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* ===== TOPO FUTURISTA ===== */
+.topo
+{
+    height: 280px;
+    background: linear-gradient(135deg, #6549b3, #219adb);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* efeito brilho animado */
+.topo::before
+{
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(90deg, transparent, rgba(44, 94, 95, 0.2), transparent);
+    animation: brilho 6s linear infinite;
+}
+
+@keyframes brilho
+{
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(100%);}
+}
+
+.topo-overlay
+{
+    position: relative;
+    text-align: center;
+    z-index: 2;
+}
+
+.voltar {
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  text-decoration: none; /* tira o sublinhado */
+  border-radius: 45px;
+  transition: 0.5s;
+}
+
+.voltar:hover {
+  background: rgb(10, 13, 192);
+  transform: scale(1.05);
+}
+
+.nome
+{
+    font-size: 2.5rem;
+    text-shadow: 0 0 15px #00f0ff;
+}
+
+.tag
+{
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* ===== CONTAINER ===== */
+.container
+{
+    max-width: 1100px;
+    margin: -80px auto 40px;
+    padding: 20px;
+}
+
+/* ===== PERFIL CARD ===== */
+.perfil-card
+{
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 102, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 102, 255, 0.2);
+    transition: 0.5s;
+}
+
+.perfil-card:hover
+{
+    transform: translateY(-20px);
+    box-shadow: 0 0 40px rgba(0, 102, 255, 0.5);
+}
+
+.avatar
+{
+    width: 110px;
+    border-radius: 50%;
+    border: 3px solid#00f0ff;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* ===== GRID ===== */
+.grid
+{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+/* ===== CARDS ===== */
+.card
+{
+    background: rgba(0, 102, 255, 0.2);
+    border: 1px solid rgba(0, 102, 255, 0.5);
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+/* efeito neon borda */
+.card::before
+{
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 15px;
+    padding: 1px;
+    background: linear-gradient(45deg, #00f0ff, #6a00ff);
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+                mask-composite: exclude;
+}
+
+/* efeito hover hacker */
+.card:hover
+{
+    transform: scale(1.07);
+    box-shadow: 0 0 30px rgba(0, 102, 255, 0.419);
+}
+
+/* ===== TEXTO ===== */
+.card h3
+{
+    margin-bottom: 10px;
+    color: #00f0ff;
+}
+
+.card p
+{
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+/* ===== EFEITO HACKER (texto piscando) ===== */
+.card p::after
+{
+    content: '|';
+    margin-left: 5px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink
+{
+    0%, 50%, 100% {opacity: 1;}
+    25%, 75% {opacity: 0;}
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 768px)
+{
+    .nome
+    {
+        font-size: 1.8rem;
+    }
+    .container
+    {
+        margin-top: -60px;
+    }
+}
+
+/* ===== TERMINAL FUTURISTA ===== */
+.terminal
+{
+    background: #050510;
+    border: 1px solid #00f0ff;
+    box-shadow: 0 0 20px #00f0ff33;
+    font-family: monospace;
+}
+
+/* corpo do terminal */
+.terminal-body
+{
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #00f0ff;
+}
+
+/* prompt > */
+.prompt
+{
+    color: #6a00ff;
+    margin-right: 5px;
+}
+
+/* efeito digitando */
+.typing {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #00f0ff;
+
+    animation: typing-loop 6s steps(22) infinite,
+               blink-hacker 1s infinite;
+}
+
+/* digita + apaga */
+@keyframes typing-loop {
+    0%   { width: 0 }
+    40%  { width: 22ch } /* digitou tudo */
+    60%  { width: 22ch } /* pausa */
+    100% { width: 0 }    /* apaga */
+}
+
+/* cursor */
+@keyframes blink-hacker {
+    50% { border-color: transparent; }
+}
